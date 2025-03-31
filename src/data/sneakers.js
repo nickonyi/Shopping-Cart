@@ -1,14 +1,14 @@
-import sneak1 from '../assets/sneakers/sneak_1.png'
-import sneak2 from '../assets/sneakers/sneak_2.png'
-import sneak3 from '../assets/sneakers/sneak_3.png'
-import sneak4 from '../assets/sneakers/sneak_4.png'
-import sneak5 from '../assets/sneakers/sneak_5.png'
-import sneak6 from '../assets/sneakers/sneak_6.png'
-import sneak7 from '../assets/sneakers/sneak_7.png'
-import sneak8 from '../assets/sneakers/sneak_8.png'
-import sneak9 from '../assets/sneakers/sneak_9.png'
-import sneak10 from '../assets/sneakers/sneak_10.png'
-import sneak11 from '../assets/sneakers/sneak_11.png'
+import sneak1 from '../assets/sneakers/sneaker_1.png'
+import sneak2 from '../assets/sneakers/sneaker_2.png'
+import sneak3 from '../assets/sneakers/sneaker_3.png'
+import sneak4 from '../assets/sneakers/sneaker_4.png'
+import sneak5 from '../assets/sneakers/sneaker_5.png'
+import sneak6 from '../assets/sneakers/sneaker_6.png'
+import sneak7 from '../assets/sneakers/sneaker_7.png'
+import sneak8 from '../assets/sneakers/sneaker_8.png'
+import sneak9 from '../assets/sneakers/sneaker_9.png'
+import sneak10 from '../assets/sneakers/sneaker_10.png'
+import sneak11 from '../assets/sneakers/sneaker_11.png'
 
 const mainSneakers = [
     {
@@ -70,5 +70,7 @@ const mainSneakers = [
         image: sneak11,
       },
   ]
+  
+ 
   
   export { mainSneakers, otherSneakers }
