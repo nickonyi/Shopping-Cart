@@ -5,7 +5,10 @@ import Nav from './Nav';
 
 export default function Header({ toggleCart, cartItems }) {
   const computeAmount = () => {
-    return 'hello';
+    return cartItems.reduce(
+      (currentAmount, item) => currentAmount + item.amount,
+      0
+    );
   };
   return (
     <header>

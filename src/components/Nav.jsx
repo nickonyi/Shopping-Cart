@@ -20,7 +20,7 @@ function Nav() {
       >
         Shop
       </NavLink>
-      <NavLink className="nav-item" to="#">
+      <NavLink className="nav-item" to="#/contact">
         Contacts
       </NavLink>
     </nav>
