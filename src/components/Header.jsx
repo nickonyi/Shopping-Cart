@@ -1,5 +1,3 @@
-export default function Header (){
-    return (
-        <div>This is the header!!!</div>
-    )
+export default function Header({ toggleCart, cartItems }) {
+  return <div>This is the header!!!</div>;
 }

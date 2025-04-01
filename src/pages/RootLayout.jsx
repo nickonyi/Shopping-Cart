@@ -17,7 +17,7 @@ export default function RootLayout() {
   };
   return (
     <>
-      <Header />
+      <Header toggleCart={toggleCart} cartItems={cartItems} />
       <Outlet />
       <Cart />
       <Footer />
