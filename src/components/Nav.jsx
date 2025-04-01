@@ -20,9 +20,9 @@ function Nav() {
       >
         Shop
       </NavLink>
-      <NavLink className="nav-item" to="#/contact">
+      <a className="nav-item" to="#">
         Contacts
-      </NavLink>
+      </a>
     </nav>
   );
 }

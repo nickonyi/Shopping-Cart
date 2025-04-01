@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 // Constants
-$main: #e3e8ee;
+$main: #fdf5c9;
 $text: #212529;
-$yellow: hsl(61, 92%, 64%);
+$text-muted: #6c757d;
+$yelllow: #c9a227;
 $blue: hsl(187, 70%, 53%);
 $grey: hsl(198, 47%, 18%);
 $lite-grey: hsl(0, 0%, 60%);
@@ -18,7 +19,7 @@ $second-font: 'Rubik', sans-serif;
 }
 
 body {
-  background-color: #e3e8ee;
+  background-color: $main;
   height: 100vh;
   overflow-x: hidden;
   font-family: $main-font;
@@ -39,7 +40,6 @@ a {
 .icon {
   cursor: pointer;
   transform: translateY(-10px);
-  transform: translateX(10px);
 }
 
 .logo-icon {
@@ -64,8 +64,30 @@ header {
   .title {
     font-size: 2.7rem;
   }
-  .nav-item {
-    font-size: 1.7rem;
-    color: $text;
+
+  .nav {
+    cursor: pointer;
+    .nav-item {
+      position: relative;
+      font-size: 1.7rem;
+      color: $text-muted;
+      &.active {
+        color: $text;
+        font-weight: 600;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        background: $yelllow;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s ease;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+    }
   }
 }
