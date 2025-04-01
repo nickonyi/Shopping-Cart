@@ -1,7 +1,30 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
-  return <div>Nav</div>;
+  return (
+    <nav className="container nav gap">
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? 'nav-item active' : 'nav-item'
+        }
+        to=""
+      >
+        Home
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? 'nav-item active' : 'nav-item'
+        }
+        to="shop"
+      >
+        Shop
+      </NavLink>
+      <NavLink className="nav-item" to="#">
+        Contacts
+      </NavLink>
+    </nav>
+  );
 }
 
 export default Nav;
