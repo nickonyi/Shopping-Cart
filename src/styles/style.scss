@@ -2,6 +2,7 @@
 
 // Constants
 $main: #e3e8ee;
+$text: #212529;
 $yellow: hsl(61, 92%, 64%);
 $blue: hsl(187, 70%, 53%);
 $grey: hsl(198, 47%, 18%);
@@ -21,4 +22,50 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: $main-font;
+}
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.icon {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transform: translateX(10px);
+}
+
+.logo-icon {
+  height: 100px;
+  width: 100px;
+}
+
+header {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    &.gap {
+      gap: 1.5rem;
+    }
+  }
+
+  .title {
+    font-size: 2.7rem;
+  }
+  .nav-item {
+    font-size: 1.7rem;
+    color: $text;
+  }
 }

@@ -13,7 +13,7 @@ export default function Header({ toggleCart, cartItems }) {
   return (
     <header>
       <div className="container">
-        <Logo className="icon" />
+        <Logo className="logo-icon icon" />
       </div>
       <Nav />
       <div className="container gap">
