@@ -138,3 +138,64 @@ header {
   background: $yelllow;
   color: #fff;
 }
+
+main {
+  flex: 1;
+  padding: 0 3rem 4rem 3rem;
+}
+
+.home {
+  padding: 3rem;
+  margin: 1rem auto 0;
+  display: flex;
+  border: 3px solid #000;
+  .content {
+    flex: 0 0 50%;
+    .title {
+      padding: 3rem 0 0 0;
+      font-size: 3rem;
+    }
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+  color: $lite-grey;
+  line-height: 1.5;
+  margin: 2rem 0 3rem 0;
+}
+.preview {
+  flex: 0 0 50%;
+  text-align: center;
+
+  .card {
+    height: 450px;
+    width: 400px;
+    box-shadow: 1rem 1rem 0 $yelllow, 1rem 1rem 0 2px #000;
+    .image {
+      width: 300px;
+      height: auto;
+    }
+  }
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: inherit;
+}
+.about {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #000;
+  font-weight: 300;
+  font-size: 1.3rem;
+  .price {
+    color: $yelllow;
+  }
+}
