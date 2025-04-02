@@ -113,6 +113,13 @@ header {
 
 .btn {
   cursor: pointer;
+  padding: 0.9rem 2rem;
+  background: $yelllow;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: #fff;
+  box-shadow: 0 0 0 $grey;
   transition: all 0.2s ease;
   &:hover {
     transform: translate(-0.5rem, -0.5rem);
