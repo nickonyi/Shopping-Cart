@@ -19,7 +19,7 @@ export default function RootLayout() {
     <>
       <Header toggleCart={toggleCart} cartItems={cartItems} />
       <Outlet />
-      <Cart />
+      {/* <Cart /> */}
       <Footer />
     </>
   );
