@@ -39,7 +39,7 @@ a {
 
 .icon {
   cursor: pointer;
-  transform: translateY(-10px);
+  transform: translateY(-2px);
 }
 
 .logo-icon {
@@ -125,4 +125,14 @@ header {
     transform: translate(-0.5rem, -0.5rem);
     box-shadow: 0.5rem 0.5rem 0 $grey;
   }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: $yelllow;
+  color: #fff;
 }
