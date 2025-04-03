@@ -22,7 +22,7 @@ export default function CardPage() {
         <div className="content">
           <div className="about">
             <h2 className="title">{title}</h2>
-            <p className="price">{price}</p>
+            <p className="price">${price}</p>
           </div>
           <div className="description">{description}</div>
           <ColorPicker />
