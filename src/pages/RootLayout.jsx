@@ -15,6 +15,8 @@ export default function RootLayout() {
       setCartStatus(false);
     }
   };
+
+  const addItem = (title, price, amount, image) => {};
   return (
     <>
       <Header toggleCart={toggleCart} cartItems={cartItems} />
