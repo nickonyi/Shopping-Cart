@@ -4,6 +4,7 @@ import { useState } from 'react';
 import ColorPicker from '../components/ColorPicker';
 import SizePicker from '../components/SizePicker';
 import AmountBtn from '../components/AmountBtn';
+import Arrow from '../assets/icons/arrow.svg?react';
 
 export default function CardPage() {
   const { addItem } = useOutletContext();
