@@ -16,11 +16,24 @@ export default function RootLayout() {
     }
   };
 
-  const addItem = (title, price, amount, image) => {};
+  const addItem = (title, price, amount, image) => {
+    const existingItem = cartItems.findIndex((item) => item.title === title);
+
+    if (existingItem !== -1) {
+      const newAmount = cartItems[existingItem].amount + amount;
+      setCartItems((prevState) => {
+        prevState[existingItem].amount = newAmount;
+        return [...prevState];
+      });
+    } else {
+      const newItem = { title, price, amount, image };
+      setCartItems((prevState) => [...prevState, newItem]);
+    }
+  };
   return (
     <>
       <Header toggleCart={toggleCart} cartItems={cartItems} />
-      <Outlet />
+      <Outlet context={{ addItem }} />
       {/* <Cart /> */}
       <Footer />
     </>
