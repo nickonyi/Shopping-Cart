@@ -5,6 +5,7 @@ $main: #fdf5c9;
 $text: #212529;
 $text-muted: #6c757d;
 $yelllow: #c9a227;
+$orange: #ffa500;
 $blue: hsl(187, 70%, 53%);
 $grey: hsl(198, 47%, 18%);
 $lite-grey: hsl(0, 0%, 60%);
@@ -215,5 +216,132 @@ main {
   }
   .content {
     flex: 1 1 50%;
+    padding: 0 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    .about {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      .title {
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 3px;
+      }
+      .price {
+        font-size: 2rem;
+      }
+    }
+    .description {
+      max-width: 600px;
+      color: $lite-grey;
+      margin: 1rem 0 1.5rem 0;
+    }
+    .size-picker {
+      margin: 1.5rem 0 2rem;
+    }
+    .buttons {
+      flex: 1;
+      align-items: flex-end;
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
+
+.color-picker {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -1rem;
+    background: #000;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .colors {
+    display: flex;
+    gap: 0.7rem;
+    .color {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      cursor: pointer;
+      &.w {
+        background: #fff;
+        border: 1px solid #ccc;
+      }
+      &.o {
+        background: $orange;
+      }
+      &.r {
+        background: #ce4257;
+      }
+      &.p {
+        background: #7209b7;
+      }
+      &.g {
+        background: #a7c957;
+      }
+      &.active {
+        border: 2px solid #000;
+      }
+    }
+  }
+}
+
+.size-picker {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -1rem;
+    background: #000;
+  }
+  .title {
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
+  }
+  .sizes {
+    display: flex;
+    gap: 0.7rem;
+    .size {
+      border: 2px solid #000;
+      padding: 0.3rem 0.5rem 0.4rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      &.active {
+        color: #fff;
+        background: $yelllow;
+      }
+    }
+  }
+}
+
+.amount-btn {
+  padding: 0.8rem 0.5rem;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  font-family: $second-font;
+  font-size: 1.5rem;
+  user-select: none;
+  svg {
+    cursor: pointer;
   }
 }

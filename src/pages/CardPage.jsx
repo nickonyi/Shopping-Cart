@@ -30,7 +30,7 @@ export default function CardPage() {
           <div className="buttons">
             <AmountBtn amount={amount} setAmount={setAmount} />
             <div className="cart-btn btn">
-              add to cart
+              Add to cart
               <Arrow />
             </div>
           </div>
