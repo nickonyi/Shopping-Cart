@@ -345,3 +345,31 @@ main {
     cursor: pointer;
   }
 }
+
+.shop {
+  text-align: center;
+  h2.title {
+    font-size: 3rem;
+  }
+  .grid {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    .card {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        transform: translate(-0.5rem, -0.5rem);
+        box-shadow: 0.5rem 0.5rem 0 $yelllow, 0.5rem 0.5rem 0 2px #000;
+      }
+    }
+    .image {
+      width: 275px;
+      height: 275px;
+    }
+  }
+}
