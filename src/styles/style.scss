@@ -367,9 +367,23 @@ main {
         box-shadow: 0.5rem 0.5rem 0 $yelllow, 0.5rem 0.5rem 0 2px #000;
       }
     }
+
     .image {
-      width: 275px;
-      height: 275px;
+      width: 500px;
+      height: 300px;
+      object-fit: contain;
+    }
+    .more {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: $yelllow;
+      font-size: 1.3rem;
+      position: absolute;
+      left: 50%;
+      bottom: -3.2rem;
+      transform: translateX(-50%);
+      cursor: pointer;
     }
   }
 }
