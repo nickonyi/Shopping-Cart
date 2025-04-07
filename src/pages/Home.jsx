@@ -8,7 +8,7 @@ export default function Home() {
       <div className="home">
         <div className="content">
           <h2 className="title">
-            Get your head in the awsed game with the best hooping shoes in the whole
+            Get your head in the game with the best hooping shoes in the whole
             world
           </h2>
           <h3 className="subtitle">
