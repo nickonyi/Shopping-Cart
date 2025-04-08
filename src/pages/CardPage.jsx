@@ -29,7 +29,13 @@ export default function CardPage() {
           <SizePicker />
           <div className="buttons">
             <AmountBtn amount={amount} setAmount={setAmount} />
-            <div className="cart-btn btn">
+            <div
+              className="cart-btn btn"
+              onClick={() => {
+                addItem(title, price, amount, image);
+                setAmount(1);
+              }}
+            >
               Add to cart
               <Arrow />
             </div>
