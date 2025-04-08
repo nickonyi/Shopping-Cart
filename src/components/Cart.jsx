@@ -25,7 +25,7 @@ export default function Cart({ status, closeCart, items }) {
                 </div>
                 <div className="info">
                   <div className="item-title">{title}</div>
-                  <div className="price">{price}</div>
+                  <div className="price">${price}</div>
                 </div>
               </div>
             );
@@ -33,7 +33,7 @@ export default function Cart({ status, closeCart, items }) {
         </div>
         <div className="total">
           <div className="total-title">Total:</div>
-          <div className="total-price">{computeTotal()}</div>
+          <div className="total-price">${computeTotal()}</div>
         </div>
         <div className="checkout-btn btn">Check out</div>
       </div>

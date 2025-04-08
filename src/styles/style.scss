@@ -26,7 +26,8 @@ body {
   font-family: $main-font;
 }
 #root {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -405,7 +406,7 @@ main {
 .cart {
   padding: 2rem;
   width: 400px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $main;
   position: absolute;
   top: 0;
@@ -474,5 +475,66 @@ main {
       height: 1px;
       background: #ccc;
     }
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .image {
+        padding: 0.5rem 0.2rem;
+        border: 1px solid #ccc;
+        position: relative;
+        border-radius: 5px;
+        .amount {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          top: 0;
+          right: 0;
+          transform: translate(50%, -50%);
+          font-family: $second-font;
+          line-height: 0;
+          background: $main;
+        }
+        img {
+          width: 80px;
+          height: 65px;
+        }
+      }
+      .info {
+        display: flex;
+        gap: 1rem;
+        font-weight: 700;
+        .item-title {
+          letter-spacing: 1px;
+          color: $grey;
+        }
+        .price {
+          font-size: 1.3rem;
+          color: $yelllow;
+        }
+      }
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    .total-title {
+      font-size: 1.8rem;
+    }
+    .total-price {
+      color: $yelllow;
+      font-size: 1.8rem;
+    }
+  }
+  .checkout-btn {
+    text-transform: uppercase;
+    text-align: center;
   }
 }
