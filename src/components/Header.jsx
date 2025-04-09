@@ -24,6 +24,10 @@ export default function Header({ toggleCart, cartItems }) {
         <Magnify className="icon" />
         <button className="btn">Log in</button>
       </div>
+
+      <button className="hamburger" onClick={toggleCart}>
+        &#9776;
+      </button>
     </header>
   );
 }
