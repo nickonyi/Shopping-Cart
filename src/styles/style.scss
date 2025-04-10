@@ -538,3 +538,36 @@ main {
     text-align: center;
   }
 }
+
+.hamburger {
+  display: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    display: none;
+    background-color: #7209b7;
+  }
+  .container.gap {
+    display: none;
+  }
+  .cart {
+    transform: translateX(-1500%);
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger {
+    display: block;
+  }
+  .home {
+    .content {
+      .title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

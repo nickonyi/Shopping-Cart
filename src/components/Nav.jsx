@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
-    <nav className="container nav gap">
+    <nav className={`container nav gap `}>
       <NavLink
         className={({ isActive }) =>
           isActive ? 'nav-item active' : 'nav-item'

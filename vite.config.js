@@ -6,4 +6,8 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [react(), svgr()],
   base: '/Shopping-Cart/',
+  server: {
+    host: true,
+    port: 5173,
+  },
 });
