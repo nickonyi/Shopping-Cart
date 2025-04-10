@@ -545,6 +545,10 @@ main {
 
 /* Media queries */
 @media (max-width: 768px) {
+  main {
+    padding: 0;
+    padding-inline: 15px;
+  }
   .nav-wrapper {
     display: none;
     background-color: #7209b7;
@@ -564,9 +568,20 @@ main {
     display: block;
   }
   .home {
+    padding: 20px;
+    margin: 0;
     .content {
+      flex: 1 1 50%;
       .title {
         font-size: 1.8rem;
+      }
+    }
+    .preview {
+      .card {
+        width: 300px;
+        .image {
+          width: 200px;
+        }
       }
     }
   }
