@@ -176,7 +176,6 @@ main {
     box-shadow: 1rem 1rem 0 $yelllow, 1rem 1rem 0 2px #000;
     .image {
       width: 450px;
-      height: auto;
     }
   }
 }
@@ -563,6 +562,7 @@ main {
   .home {
     display: flex;
     flex-direction: column;
+    margin-block: 20px;
   }
   .hamburger {
     display: block;
@@ -571,18 +571,25 @@ main {
     padding: 20px;
     margin: 0;
     .content {
-      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .title {
         font-size: 1.8rem;
       }
     }
     .preview {
+      padding: 50px 0 20px 0;
       .card {
-        width: 300px;
+        width: 250px;
+        height: 200px;
         .image {
-          width: 200px;
+          width: 150px;
         }
       }
     }
+  }
+  .footer {
+    margin-top: 20px;
   }
 }
