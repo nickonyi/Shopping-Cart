@@ -589,6 +589,22 @@ main {
       }
     }
   }
+
+  .shop {
+    padding-bottom: 50px;
+    h2.title {
+      font-size: 1.7rem;
+    }
+    .grid {
+      .card {
+        width: 300px;
+        height: 320px;
+        .image {
+          width: 250px;
+        }
+      }
+    }
+  }
   .footer {
     margin-top: 20px;
   }
