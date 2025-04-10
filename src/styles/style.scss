@@ -605,6 +605,33 @@ main {
       }
     }
   }
+  .card-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image {
+      width: 300px;
+      border: 1px solid;
+    }
+    .content {
+      flex: 1;
+      padding-inline: 40px;
+      .description {
+        padding-inline: 20px;
+      }
+      .color-picker {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 20px;
+      }
+      .size-picker {
+        .size {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
   .footer {
     margin-top: 20px;
   }
