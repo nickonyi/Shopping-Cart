@@ -550,7 +550,6 @@ main {
   }
   .nav-wrapper {
     display: none;
-    background-color: #7209b7;
   }
   .container.gap {
     display: none;
@@ -566,6 +565,10 @@ main {
   }
   .hamburger {
     display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
   }
   .home {
     padding: 20px;
@@ -652,7 +655,23 @@ main {
       }
     }
   }
+  .burger {
+    height: 20px;
+    width: 20px;
+  }
   .footer {
     margin-top: 20px;
+  }
+  .nav.open {
+    display: block;
+  }
+  .nav-wrapper.open,
+  .container.gap.open {
+    display: block !important;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid yellow;
   }
 }
