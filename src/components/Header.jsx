@@ -2,6 +2,7 @@ import Logo from '../assets/icons/logo.svg?react';
 import Cart from '../assets/icons/cart.svg?react';
 import Magnify from '../assets/icons/magnify.svg?react';
 import Nav from './Nav';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function Header({ toggleCart, cartItems }) {
@@ -20,7 +21,9 @@ export default function Header({ toggleCart, cartItems }) {
   return (
     <header>
       <div className="container">
-        <Logo className="logo-icon icon" />
+        <NavLink to="">
+          <Logo className="logo-icon icon" />
+        </NavLink>
       </div>
       <div className={`nav-wrapper ${menuOpen ? 'open' : ''}`}>
         <Nav />
