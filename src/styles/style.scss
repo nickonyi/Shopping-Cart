@@ -616,6 +616,14 @@ main {
     .content {
       flex: 1;
       padding-inline: 40px;
+      .about {
+        .title {
+          font-size: 1.5rem;
+        }
+        .price {
+          font-size: 1.5rem;
+        }
+      }
       .description {
         padding-inline: 20px;
       }
@@ -624,10 +632,22 @@ main {
         flex-direction: column;
         align-items: start;
         padding-left: 20px;
+        .title {
+          font-size: 1.3rem;
+        }
       }
       .size-picker {
         .size {
           font-size: 1rem;
+        }
+      }
+      .buttons {
+        .cart-btn.btn {
+          padding-block: 0.9rem;
+          padding-inline: 0.7rem;
+          display: flex;
+          justify-content: space-between;
+          font-size: 1.2rem;
         }
       }
     }

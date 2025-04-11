@@ -15,8 +15,6 @@ export default function Header({ toggleCart, cartItems }) {
   };
 
   const handleToggle = () => {
-    console.log('yolo');
-
     setMenuOpen((prev) => !prev);
   };
   return (
