@@ -664,6 +664,9 @@ main {
   }
   .nav.open {
     display: block;
+    height: 100px;
+    width: 100px;
+    z-index: 200;
   }
   .nav-wrapper.open,
   .container.gap.open {
