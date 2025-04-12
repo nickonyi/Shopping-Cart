@@ -28,16 +28,17 @@ export default function Header({ toggleCart, cartItems }) {
       </div>
       <div className={`nav-wrapper ${menuOpen ? 'open' : ''}`}>
         <Nav />
-      </div>
-      <div className={`container gap ${menuOpen ? 'open' : ''}`}>
-        <div className="cart-icon" onClick={toggleCart}>
-          <Cart className="icon" />
-          <div className="cart-amount">{computeAmount()}</div>
+        <div
+          className={`container cart-conatiner gap ${menuOpen ? 'open' : ''}`}
+        >
+          <div className="cart-icon" onClick={toggleCart}>
+            <Cart className="icon" />
+            <div className="cart-amount">{computeAmount()}</div>
+          </div>
+          <Magnify className="icon" />
+          <button className="btn">Log in</button>
         </div>
-        <Magnify className="icon" />
-        <button className="btn">Log in</button>
       </div>
-
       <button className="hamburger" onClick={handleToggle}>
         <Hamburger className="burger" />
       </button>
