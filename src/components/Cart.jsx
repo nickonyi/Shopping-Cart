@@ -1,6 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function Cart({ status, closeCart, items, setCartItems }) {
+export default function Cart({
+  status,
+  closeCart,
+  items,
+  setCartItems,
+  handleToggle,
+}) {
   const navigate = useNavigate();
   const computeTotal = () => {
     return items.reduce(
@@ -14,6 +20,7 @@ export default function Cart({ status, closeCart, items, setCartItems }) {
     setCartItems([]);
     navigate('');
     closeCart();
+    handleToggle();
   };
   return (
     <>

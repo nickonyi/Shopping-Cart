@@ -7,6 +7,7 @@ import { useState } from 'react';
 export default function RootLayout() {
   const [cartStatus, setCartStatus] = useState(null);
   const [cartItems, setCartItems] = useState([]);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleCart = () => {
     if (!cartStatus) {
@@ -14,6 +15,9 @@ export default function RootLayout() {
     } else {
       setCartStatus(false);
     }
+  };
+  const handleToggle = () => {
+    setMenuOpen((prev) => !prev);
   };
 
   const addItem = (title, price, amount, image) => {
@@ -32,13 +36,20 @@ export default function RootLayout() {
   };
   return (
     <>
-      <Header toggleCart={toggleCart} cartItems={cartItems} />
+      <Header
+        toggleCart={toggleCart}
+        cartItems={cartItems}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        handleToggle={handleToggle}
+      />
       <Outlet context={{ addItem }} />
       <Cart
         status={cartStatus}
         closeCart={toggleCart}
         items={cartItems}
         setCartItems={setCartItems}
+        handleToggle={handleToggle}
       />
       <Footer />
     </>

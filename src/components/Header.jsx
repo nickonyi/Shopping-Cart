@@ -4,11 +4,13 @@ import Hamburger from '../assets/icons/bars-solid.svg?react';
 import Magnify from '../assets/icons/magnify.svg?react';
 import Nav from './Nav';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
 
-export default function Header({ toggleCart, cartItems }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+export default function Header({
+  toggleCart,
+  cartItems,
+  menuOpen,
+  handleToggle,
+}) {
   const computeAmount = () => {
     return cartItems.reduce(
       (currentAmount, item) => currentAmount + item.amount,
@@ -16,9 +18,6 @@ export default function Header({ toggleCart, cartItems }) {
     );
   };
 
-  const handleToggle = () => {
-    setMenuOpen((prev) => !prev);
-  };
   return (
     <header>
       <div className="container">
