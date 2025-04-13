@@ -1,9 +1,19 @@
-export default function Cart({ status, closeCart, items }) {
+import { useNavigate } from 'react-router-dom';
+
+export default function Cart({ status, closeCart, items, setCartItems }) {
+  const navigate = useNavigate();
   const computeTotal = () => {
     return items.reduce(
       (currentPrice, item) => currentPrice + item.price * item.amount,
       0
     );
+  };
+
+  const checkOut = () => {
+    alert('Your total is ' + '$' + computeTotal());
+    setCartItems([]);
+    navigate('');
+    closeCart();
   };
   return (
     <>
@@ -35,7 +45,9 @@ export default function Cart({ status, closeCart, items }) {
           <div className="total-title">Total:</div>
           <div className="total-price">${computeTotal()}</div>
         </div>
-        <div className="checkout-btn btn">Check out</div>
+        <div className="checkout-btn btn" onClick={checkOut}>
+          Check out
+        </div>
       </div>
     </>
   );

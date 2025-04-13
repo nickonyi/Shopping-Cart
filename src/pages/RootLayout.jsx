@@ -34,7 +34,12 @@ export default function RootLayout() {
     <>
       <Header toggleCart={toggleCart} cartItems={cartItems} />
       <Outlet context={{ addItem }} />
-      <Cart status={cartStatus} closeCart={toggleCart} items={cartItems} />
+      <Cart
+        status={cartStatus}
+        closeCart={toggleCart}
+        items={cartItems}
+        setCartItems={setCartItems}
+      />
       <Footer />
     </>
   );
