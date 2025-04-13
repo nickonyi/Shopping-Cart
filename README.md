@@ -1,12 +1,35 @@
-# React + Vite
+# Shopping-Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a part of the "The Odin Project" [curriculum](https://www.theodinproject.com/).
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Screenshot
+
+![Solution Preview](./public/images/preview1.png)
+![Solution Preview](./public/images/preview2.png)
+
+### Links
+
+- Repository URL: [View Code](https://github.com/romaleks/Shopping-Cart)
+- Live Site URL: [Live Preview](https://romaleks.github.io/Shopping-Cart/)
+
+## My process
+
+### Built with
+
+- React
+- React Hooks
+- ReactRouter
+- Sass
+- Prettier
+- Webpack
+- Visual Studio Code
