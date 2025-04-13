@@ -31,5 +31,5 @@ This project is a part of the "The Odin Project" [curriculum](https://www.theodi
 - ReactRouter
 - Sass
 - Prettier
-- Webpack
+- Vite
 - Visual Studio Code
