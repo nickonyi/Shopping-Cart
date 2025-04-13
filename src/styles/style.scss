@@ -17,7 +17,10 @@ $second-font: 'Rubik', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background-color: $main;
   height: 100vh;
@@ -553,15 +556,12 @@ main {
     padding: 0;
     padding-inline: 15px;
   }
-  html,
-  body {
-    overflow-x: hidden;
-  }
+
   .container.gap {
     display: none;
   }
   .cart {
-    transform: translateX(-1500%);
+    transform: translateX(300%);
   }
 
   .home {
