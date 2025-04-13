@@ -29,13 +29,13 @@ export default function Header({ toggleCart, cartItems }) {
       <div className={`nav-wrapper ${menuOpen ? 'open' : ''}`}>
         <Nav />
         <div
-          className={`container cart-conatiner gap ${menuOpen ? 'open' : ''}`}
+          className={`container cart-container gap ${menuOpen ? 'open' : ''}`}
         >
           <div className="cart-icon" onClick={toggleCart}>
             <Cart className="icon" />
             <div className="cart-amount">{computeAmount()}</div>
           </div>
-          <Magnify className="icon" />
+          <Magnify className="icon magnif" />
           <button className="btn">Log in</button>
         </div>
       </div>
