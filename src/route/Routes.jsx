@@ -5,7 +5,7 @@ import CardPage from '../pages/CardPage';
 
 const routes = [
   {
-    path: '/Shopping-Cart',
+    path: '/',
     element: <RootLayout />,
     children: [
       { path: '', element: <Home /> },
