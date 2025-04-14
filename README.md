@@ -20,7 +20,7 @@ This project is a part of the "The Odin Project" [curriculum](https://www.theodi
 ### Links
 
 - Repository URL: [View Code](https://github.com/nickonyi/Shopping-Cart.git)
-- Live Site URL: [Live Preview](https://romaleks.github.io/Shopping-Cart/)
+- Live Site URL: [Live Preview](https://shopping-cart-six-drab.vercel.app/)
 
 ## My process
 
