@@ -9,7 +9,11 @@ function SizePicker() {
       <h3 className="title">Choose size</h3>
       <div className="sizes">
         {sizes.map((size, index) => (
-          <div key={index} className={`size ${active === size && 'active'}`}>
+          <div
+            key={index}
+            className={`size ${active === size && 'active'}`}
+            onClick={() => setActive(size)}
+          >
             {size}
           </div>
         ))}

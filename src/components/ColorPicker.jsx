@@ -12,6 +12,7 @@ function ColorPicker() {
           <div
             key={index}
             className={`color ${color} ${active == color ? 'active' : ''}`}
+            onClick={() => setActive(color)}
           ></div>
         ))}
       </div>
